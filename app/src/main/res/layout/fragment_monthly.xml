@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/default_margin"
+ >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:minHeight="35dp"
+        android:gravity="center"
+        android:padding="@dimen/default_margin"
+        android:weightSum="2"
+        android:background="@color/colorDarkAccent">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="@dimen/text_smallest"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorPrimary"
+                android:text="Attendance\n\nTo display monthly attendance, select a month, then it will show your personal time logs."/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@color/colorLightAccent"
+            android:padding="@dimen/default_margin">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selected Month:"
+                android:textStyle="bold"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/text_small"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_small"
+               ></Spinner>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:weightSum="9"
+        android:padding="5dp"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_small"
+            android:gravity="left|center"
+            android:text="Date"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_small"
+            android:gravity="left|center"
+            android:text="Leave"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_small"
+            android:gravity="left|center"
+            android:text="IN"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_small"
+            android:gravity="left|center"
+            android:text="OUT"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_smallest"
+            android:gravity="left|center"
+            android:text="Actual Hours"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_smallest"
+            android:gravity="left|center"
+            android:text="Expected Hours"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_month"></ListView>
+
+
+</LinearLayout>

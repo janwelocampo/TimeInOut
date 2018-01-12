@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Time-Log</string>
+
+    <string-array name="ld_activityScreenTitles">
+        <item>Time In / Out</item>
+        <item>Schedules</item>
+        <item>Request </item>
+        <item>Support</item>
+        <item />
+        <item>Log Out</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+        <item>@drawable/ic_clock</item>
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_account</item>
+        <item>0</item>
+        <item>0</item>
+        <item>@drawable/ic_logout</item>
+    </array>
+
+    <string name="camera_permission_confirmation">This app demonstrates the usage of CameraView. In order to do that, it needs permission to access camera.</string>
+    <string name="camera_permission_not_granted">Camera app cannot do anything without camera permission.</string>
+    <string name="picture_taken">Picture taken</string>
+    <string name="aspect_ratio">Aspect ratio</string>
+    <string name="switch_flash">Switch flash</string>
+    <string name="switch_camera">Switch camera</string>
+    <string name="flash_auto">Flash auto</string>
+    <string name="flash_off">Flash off</string>
+    <string name="flash_on">Flash on</string>
+</resources>

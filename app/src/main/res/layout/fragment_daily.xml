@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:scatter="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+ >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:minHeight="35dp"
+        android:gravity="center"
+        android:padding="@dimen/default_margin"
+        android:weightSum="2"
+        android:background="@color/colorDarkAccent"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Daily Itinerary"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_small" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_smallest"
+                android:text="CONSUMED TIME: 5.30 HOURS"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_smallest"
+                android:text="REMAINING TIME: 2.30 HOURS"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_smallest"
+                android:text="BREAK TIME: 1 HOUR"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.intrusoft.scatter.PieChart
+        android:layout_margin="10dp"
+        android:id="@+id/daily_chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        scatter:aboutChart="Your Daily Attendance"
+        scatter:aboutTextColor="#000000"
+        scatter:centerColor="@color/colorPrimary"
+        scatter:chartColor="@color/colorAccent"
+        scatter:equalPartition="false"
+        scatter:aboutTextSize="25"
+        scatter:textColor="@color/textColorPrimary" />
+
+</LinearLayout>
